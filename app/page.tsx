@@ -6,6 +6,7 @@ import 'aos/dist/aos.css'; // Import AOS CSS
 import Head from 'next/head'; // Import the Head component
 import { useEffect } from "react";
 import cssClass from "./page.module.scss";
+import Link from 'next/link';
 export default function Home() {
   /**
    * STATES
@@ -60,6 +61,7 @@ export default function Home() {
     <main className={`flex min-h-screen flex-col items-center justify-between ${cssClass.homePage}`} >
         <div className="home-container"> 
           <section className="home-title">
+          <Link className="text-blue-500" href="/example-adsgram">Example Adsgram</Link>
           <div className="home-bg-header-mask"></div>
           <div className="home-title-content">
             <BannerComponent />
