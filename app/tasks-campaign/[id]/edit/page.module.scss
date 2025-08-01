@@ -1,0 +1,23 @@
+.tasksEditPage {
+  :global {
+   .main-page-container{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+    .ant-upload-wrapper {
+      .ant-upload-list{
+        .ant-upload-list-item {
+          .ant-upload-list-item-thumbnail{
+            
+          }
+        }
+      }
+    }
+  }
+  }
+}

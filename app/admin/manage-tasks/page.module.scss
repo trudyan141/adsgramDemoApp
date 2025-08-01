@@ -1,0 +1,38 @@
+.manageTasksPage {
+  :global {
+   .main-page-container{
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+    .banner-image{
+      width: 128px;
+      height: auto;
+    }
+    .status{
+      font-weight: bold;
+      text-transform: capitalize;
+      display: flex;
+      align-items: center;
+      span{
+        margin-left: 4px;
+      }
+    }
+    .active{
+      color: rgb(33,177,88)
+    }
+    .review, .inreview{
+      color:  rgb(234,179,8)
+    }
+    .rejected, .reject{
+      color:  rgb(228,29, 29)
+    }
+    .ant-switch{
+      &.green{
+        &.ant-switch-checked{
+          background: rgb(33,177,88);
+        }
+      }
+    }
+  }
+  }
+}

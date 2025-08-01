@@ -1,0 +1,35 @@
+name: "Deploy dev"
+on:
+  workflow_dispatch:
+    inputs:
+      execution_message:
+        description: "Execution message"
+        required: false
+        default: ""
+        type: string
+  # push:
+  #   branches: 
+  #     - develop
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build source
+        uses: appleboy/ssh-action@v1.0.2
+        with:
+          host: ${{ vars.SERVER_IP_DEV }}
+          username: ${{ vars.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY_DEV  }}
+          passphrase: ${{ secrets.SSH_PASSPHRASE_DEV  }}
+          script: |
+            echo "** Update source"
+            cd ~/sdk/sdk-web-app
+            git fetch --all
+            git checkout ${{ github.ref_name }}
+            git pull
+            echo "** Build Docker"
+            cd ~/sdk/
+            docker compose build web
+            echo "** Restart docker"
+            docker compose rm -f -s web
+            docker compose up -d --remove-orphans web

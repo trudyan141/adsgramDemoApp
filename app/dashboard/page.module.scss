@@ -1,0 +1,16 @@
+.dashboardPage {
+  :global {
+   .main-page-container{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    padding: 24px;
+    background: #fff;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+  }
+  }
+}

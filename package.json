@@ -1,0 +1,55 @@
+{
+  "name": "sdk-web-app",
+  "version": "0.3.0",
+  "private": true,
+  "scripts": {
+    "dev": "env-cmd -f .env.dev next dev",
+    "build": "next build",
+    "build:dev": "env-cmd -f .env.dev env-cmd -f .env.dev.local next build",
+    "build:prod": "env-cmd -f .env.prod env-cmd -f .env.prod.local next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ant-design/charts": "^2.2.1",
+    "@ant-design/nextjs-registry": "^1.0.0",
+    "@tanstack/react-query": "^5.49.2",
+    "@tonconnect/ui-react": "2.0.0",
+    "animated-number-react": "^0.1.2",
+    "antd": "^5.19.1",
+    "aos": "^2.3.4",
+    "axios": "^1.7.2",
+    "bignumber.js": "^9.1.2",
+    "dompurify": "^3.2.2",
+    "form-data": "^4.0.1",
+    "lucide-react": "^0.428.0",
+    "next": "14.2.4",
+    "next-intl": "^3.25.3",
+    "node-fetch": "^3.3.2",
+    "react": "^18",
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-dom": "^18",
+    "react-syntax-highlighter": "^15.5.0",
+    "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "@shikijs/transformers": "^1.0.0",
+    "@types/aos": "^3.0.7",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-copy-to-clipboard": "^5.0.7",
+    "@types/react-dom": "^18",
+    "@types/react-syntax-highlighter": "^15.5.13",
+    "env-cmd": "^10.1.0",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.4",
+    "postcss": "^8",
+    "sass": "^1.77.6",
+    "shiki": "^1.0.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  },
+  "resolutions": {
+    "@tonconnect/ui": "2.0.0"
+  }
+}

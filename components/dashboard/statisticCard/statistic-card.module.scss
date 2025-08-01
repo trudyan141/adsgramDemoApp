@@ -1,0 +1,19 @@
+.StatisticCardComponent {
+  height: 100%;
+  :global {
+    .card-container {
+      height: 100%;
+    }
+    svg {
+      path {
+        stroke: currentColor;
+      }
+      color: currentColor;
+    }
+  }
+}
+
+.cardBorder {
+  border-left-width: 4px;
+  border-left-color: var(--border-color);
+}

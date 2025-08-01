@@ -1,0 +1,39 @@
+.mainLayoutHeader {
+  :global {
+   .left-content{
+     button{
+       @media screen and (max-width: 767px) {
+          margin-right: 4px;
+       }
+     }
+     a{
+      span{
+        @media screen and (max-width: 767px) {
+         margin-left: 4px;
+       }
+      }
+      
+     }
+   }
+    .right-content {
+      .ml-4{
+        @media screen and (max-width: 767px) {
+          margin-left: 4px;
+        }
+      }
+     #ton-connect-button{
+        @media screen and (max-width: 767px) {
+          button{
+            min-width: inherit;
+            padding: 4px 8px;
+            div{
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+
+}

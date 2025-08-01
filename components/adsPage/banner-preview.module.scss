@@ -1,0 +1,106 @@
+.bannerPreview {
+  position: relative;
+  
+  :global {
+    .back-status{
+      position: absolute;
+      top: -74px;
+      left: 0px;
+      .back-icon{
+        svg{
+          cursor: pointer;
+          width: 20px;
+          height: 20px;
+          &:hover{
+            opacity: 0.5;
+          }
+        }
+       
+      }
+    }
+   .banner-container{
+      border: 1px solid #E6E6E6;
+      .description{
+        padding: 12px 16px;
+      }
+      .banner-link{
+        padding: 12px 16px;
+        display: flex;
+        text-decoration: none;
+       
+        .banner-image{
+          width: 96px;
+          height: 96px;
+          object-fit: cover;
+          margin-right: 16px;
+          border-radius: 12px;
+        }
+        .banner-content-right{
+          display: flex;
+          flex-direction: column;
+           justify-content: space-between;
+          width: 100%;
+        .banner-content{
+          width: 100%;
+          .banner-link-title{
+            color: #30323D;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-bottom:4px;
+          }
+          .banner-link-description{
+            color: #77787E;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            word-break: break-word;
+            margin-bottom: 6px;
+            
+          }
+        }
+      }
+        
+        .banner-link-btn{
+          padding: 6px 16px;
+          border-radius: 50px;
+          border: 1px solid #30323D;
+          color: #30323D;
+          font-weight: bold;
+          text-align: center;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          &.active, &:hover, &:active, &:focus{
+            border: 1px solid transparent;
+            background: linear-gradient(90deg, #30323D 0%, #77787E 100%);
+            color: #FFF;
+          }
+
+        }
+      
+      }
+      .detail-info{
+        .banner-link{
+          .banner-content-right{
+            justify-content: space-between;
+            .banner-content{
+             
+            }
+          }
+        }
+        .description{
+          .title{
+            font-size: 18px; font-weight: 600; margin-top: 20px; margin-bottom: 8px;
+          }
+          .content{
+            
+          }
+        }
+      }
+    }
+  }
+}

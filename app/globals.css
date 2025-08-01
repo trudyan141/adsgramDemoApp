@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: light;
+  }
+
+}
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: light;
+  }
+}
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --header-height: 60px;
+}
+
+
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+.CodeBlockClass {
+  position: relative;
+}
+
+.CopyButtonClass {
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  cursor: pointer;
+}
+.navigation-links .link{
+    color:rgba(0, 0, 0, 0.88);
+  }
+.navigation-links .link.active{
+  color:rgb(59 130 246 );
+}
+.navigation-links .link.disabled{
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+.code-snippet-label{
+  font-size: 16px;
+  font-weight: 500;
+}
+/** custom collapse **/
+.ant-collapse .ant-collapse-header{
+  background: #1677ff;
+  border-radius:0px !important;
+}
+.ant-collapse .ant-collapse-header .ant-collapse-expand-icon{
+  color: #fff;
+}
+.ant-collapse .ant-collapse-header .ant-collapse-header-text{
+  color: #fff;
+}
+
+ .ant-dropdown-menu-title-content{
+  .active{
+    color: #1890ff;
+  }
+}
+.table-responsive {
+  overflow-x: auto;
+}
+
+.responsive-table {
+  min-width: 600px; /* Adjust as needed for your design */
+}
+.responsive-table .ant-table-tbody{
+  background: #fff;
+}
+
+/** custom ant menu **/
+
+.admin-main-layout .ant-menu-light .ant-menu-item, 
+.admin-main-layout .ant-menu-light>.ant-menu .ant-menu-item,
+.admin-main-layout .ant-menu-light .ant-menu-submenu-title,
+.admin-main-layout .ant-menu-light>.ant-menu .ant-menu-submenu-title{
+  color:rgb(145, 157, 169);
+  
+}
+.admin-main-layout .ant-menu-light .ant-menu-submenu-selected >.ant-menu-submenu-title, 
+.admin-main-layout .ant-menu-light>.ant-menu .ant-menu-submenu-selected >.ant-menu-submenu-title{
+  color: #1890ff !important;
+}
+.admin-main-layout .ant-menu-inline.ant-menu-sub .ant-menu-item-selected .ant-menu-title-content{
+  color: #1890ff ;
+}
+.admin-main-layout .ant-menu-inline .ant-menu-item-selected .ant-menu-title-content,
+.admin-main-layout .ant-menu-inline .ant-menu-item-selected .anticon{
+  color: #1890ff;
+}

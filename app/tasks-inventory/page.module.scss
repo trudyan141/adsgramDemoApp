@@ -1,0 +1,29 @@
+.inventoryPage {
+  :global {
+   .main-page-container{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+    .tab-title{
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+    .circle{
+      width: 16px;
+      height: 16px;
+      border: 1px solid #ccc;
+      border-radius: 50%;
+      &.connected{
+        border: 0px;
+        background: #38e038;
+      }
+    }
+  }
+  }
+}

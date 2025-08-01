@@ -1,0 +1,13 @@
+.langDropdown {
+  :global {
+   .lang-dropdown{
+    .ant-avatar-lg{
+      background: transparent;
+      svg{
+        color: rgba(0, 0, 0, 0.88);
+      }
+    }
+   }
+  }
+
+}

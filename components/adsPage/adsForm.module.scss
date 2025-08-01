@@ -1,0 +1,72 @@
+.TasksForm {
+  :global {
+    .custom-collapse{
+      margin-bottom: 24px;
+      .ant-collapse-header {
+        background-color: #f6f6f6;
+        padding: 8px 12px !important;
+        border-radius: 8px !important;
+        .ant-collapse-expand-icon{
+          color: rgba(0, 0, 0, 0.88);
+        }
+        .custom-collapse-header{
+          color: rgba(0, 0, 0, 0.88);
+          font-weight: bold;
+        }
+      }
+      .ant-collapse-content{
+        .ant-collapse-content-box{
+          padding: 0px;
+          .domain-info-container{
+            padding: 16px;
+            .image-spin{
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              z-index: 2;
+            }
+          }
+        }
+      }
+    }
+    .generate-script {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .script-snippets {
+      border-radius: 8px;
+      width: 100%;
+      margin-bottom: 24px;
+
+      .code-snippet-code {
+        width: 100%;
+        
+        pre {
+          margin: 0 !important;
+          border-radius: 6px;
+          white-space: pre-wrap !important;
+          word-wrap: break-word !important;
+          max-width: 100%;
+          font-size: 14px;
+        }
+
+        code {
+          white-space: pre-wrap !important;
+          word-break: break-all !important;
+        }
+      }
+    }
+    .banner-preview{
+      .ant-card-head-title{
+        text-align: center;
+      }
+      .ant-card-body{
+        padding-top: 8px;
+       
+      }
+    }
+  }
+}

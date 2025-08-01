@@ -1,0 +1,103 @@
+.BannerComponent {
+  :global {
+    .banner-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0px 80px;
+      position: relative;
+      z-index: 2;
+      @media screen and (max-width: 767px) {
+        padding: 0px 12px;
+        flex-direction: column;
+      }
+      .banner-left {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        padding-right: 56px;
+        @media screen and (max-width: 767px) {
+          width: 100%;
+          order: 2;
+          padding-right:0px;
+        }
+        .banner-title {
+          color: #fff;
+          font-size: 65px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 76px;
+          @media screen and (max-width: 767px) {
+            font-size: 32px;
+            line-height: 46px;
+            text-align: center;
+          }
+
+          span {
+            background: var(--Linear, linear-gradient(139deg, #31a9ef 14.29%, #9126ed 85.21%));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: block;
+            width: 100%;
+          }
+        }
+        .banner-description {
+          color: rgba(255, 255, 255, 0.69);
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 28px;
+          letter-spacing: -0.54px;
+          margin: 28px 0px 32px 0px;
+          @media screen and (max-width: 767px) {
+            font-size: 14px;
+            letter-spacing: -0.42px;
+            margin: 24px 0px 48px 0px;
+            text-align: center;
+          }
+        }
+        .button-connect-container {
+          margin-bottom: 30px;
+          @media screen and (max-width: 767px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          > button {
+            border-radius: 8.333px;
+            background: #0d69d7;
+            padding: 11px 27px;
+            border: 0px;
+            color: #fff;
+            height: auto;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            &:hover {
+              box-shadow: 0 0 8px #0d69d7, 0 0 12px rgba(84, 151, 204, 0.6);
+            }
+          }
+        }
+      }
+      .banner-right {
+        margin-left: 24px;
+        @media screen and (max-width: 767px) {
+          order: 1;
+          margin-left: 0px;
+          margin-bottom: 24px;
+        }
+        .banner-logo {
+          width: 304px;
+          height: auto;
+          animation: float 4s ease-in-out infinite;
+          @media screen and (max-width: 767px) {
+            width: 136px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}

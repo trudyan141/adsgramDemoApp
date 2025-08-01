@@ -1,0 +1,13 @@
+.manageUsersPage {
+  :global {
+    .main-page-container{
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+      .banner-image{
+        width: 128px;
+        height: auto;
+      }
+    }
+  }
+}

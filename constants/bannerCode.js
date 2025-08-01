@@ -1,0 +1,2 @@
+export const BANNER_CODE_URL = process.env.NEXT_PUBLIC_BANNER_CODE_URL;
+export const BACKEND_API_URL = process.env.NEXT_PUBLIC_BACKEND_API_URL;
