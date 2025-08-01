@@ -247,5 +247,8 @@
   "DUPLICATE_TASK": "Task title must be unique!",
   "VALIDATE_REQUIRED": "This field is required",
   "VALIDATE_TYPE_URL": "Please enter a valid URL",
-  "VALIDATE_TYPE_EMAIL": "Please enter a valid email!"
+  "VALIDATE_TYPE_EMAIL": "Please enter a valid email!",
+  "MESSAGE_ADSGRAM_NOT_READY": "AdsGram is not ready yet. Please try again later.",
+  "MESSAGE_ADSGRAM_REWARD_SUCCESS": "You've successfully completed the ad! Your reward has been credited.",
+  "WATCH_AD": "Watch Ad"
 }

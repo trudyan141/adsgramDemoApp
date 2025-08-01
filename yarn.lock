@@ -2,6 +2,18 @@
 # yarn lockfile v1
 
 
+"@adsgram/common@1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@adsgram/common/-/common-1.0.2.tgz#d47ba77b3a84df564dafa10ca5a14705610db39b"
+  integrity sha512-lExGFbRhdz/JdqqOc/1c0lU8OQAtTG6Y0WE2hw5hUV0+v+xZXbaWVyKXcCDr3l+KuxbPw7P515a/+CXjsYQuqA==
+
+"@adsgram/react@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@adsgram/react/-/react-1.0.2.tgz#95681cb85600b29a7c11f631492109da3673ae7c"
+  integrity sha512-41Ywf5zweIu/cbvyfyQK1DRK6L64wr1+u+F5XAICM2wV4uJa0mnfQ8dCa51JZ9uvde3BTuMqpToU8VomPc6XQQ==
+  dependencies:
+    "@adsgram/common" "1.0.2"
+
 "@alloc/quick-lru@^5.2.0":
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/@alloc/quick-lru/-/quick-lru-5.2.0.tgz#7bf68b20c0a350f936915fcae06f58e32007ce30"
