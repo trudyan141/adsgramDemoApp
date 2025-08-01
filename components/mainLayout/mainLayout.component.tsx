@@ -18,7 +18,7 @@ const MainLayout = ({
   /**
    * HOOKS
    */
-  const manifestUrl = NEXT_PUBLIC_SDK_DOMAIN_URL === 'https://dev.apps-network.net' ? 'https://dev.apps-network.net/tonconnect-manifest-dev.json' : 'https://app.apps-network.net/tonconnect-manifest-prod.json';
+  const manifestUrl = NEXT_PUBLIC_SDK_DOMAIN_URL === 'https://adsgram-demo-app.vercel.app' ? 'https://adsgram-demo-app.vercel.app/tonconnect-manifest-dev.json' : 'https://adsgram-demo-app.vercel.app/tonconnect-manifest-prod.json';
  
   /**
    * 
