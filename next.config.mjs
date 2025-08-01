@@ -7,8 +7,6 @@ const nextConfig = {
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
   },
-  // Add error handling for GitHub Pages
-  basePath: process.env.GITHUB_ACTIONS ? '/adsgramDemoApp' : '',
   images: {
     unoptimized: true,
   },
