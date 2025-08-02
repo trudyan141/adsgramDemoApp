@@ -8,8 +8,10 @@ export default function ExampleAdsgramPage() {
   const t = useTranslations();
   
   // Replace with your actual blockId from AdsGram dashboard
-  const blockId = "13345";
-  
+  const blockId = "13345"; // add api get userId to add reward
+  const blockIdReward2 = "13355"; // add api get userId to add reward
+  const blockInterstital = "13356"; // not have api get userId
+  const blockIdTask = "13357"; // add api get userId to add reward
   const handleAdCompleted = () => {
     console.log("Ad completed successfully!");
     // Here you can add logic to reward the user
@@ -30,7 +32,27 @@ export default function ExampleAdsgramPage() {
             <AdsgramButton 
               blockId={blockId}
               type="primary"
+              className="mb-2 mr-2"
+              name="Ad 1"
             />
+            <AdsgramButton 
+            blockId={blockIdReward2}
+            type="primary"
+            className="mb-2 mr-2"
+            name="Ad 2"
+          />
+            <AdsgramButton 
+            blockId={blockInterstital}
+            type="primary"
+            className="mb-2 mr-2"
+            name="Ad 3"
+          />
+            <AdsgramButton 
+            blockId={blockIdTask}
+            type="primary"
+            className="mb-2 mr-2"
+            name="Ad 4"
+          />
           </Card>
         </Col>
         

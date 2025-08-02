@@ -6,6 +6,7 @@ import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 
 interface AdsgramButtonProps extends ButtonProps {
+  name: string;
   blockId: string;
   onAdCompleted?: () => void;
   onAdFailed?: () => void;
@@ -13,6 +14,7 @@ interface AdsgramButtonProps extends ButtonProps {
 }
 
 export default function AdsgramButton({
+  name,
   blockId,
   onAdCompleted,
   onAdFailed,
@@ -55,7 +57,7 @@ export default function AdsgramButton({
       loading={localLoading}
       {...buttonProps}
     >
-      {children || t('WATCH_AD')}
+      {children || name}
     </Button>
   );
 } 
