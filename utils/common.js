@@ -1,5 +1,7 @@
 import BigNumber from "bignumber.js";
 import { TON_DECIMALS } from "../constants/tonConfigs";
+
+
 export const toCurrency = (number, decimals = 2) => {
     if (isNaN(number)) {
         return 'Invalid number';

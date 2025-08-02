@@ -51,3 +51,39 @@ export const TASK_TYPES=[
   {label: 'TASK_TYPE_ONE_TIME', value: 'OneTime'},
   {label: 'TASK_TYPE_REPEATING', value: 'Repeating'},
 ]
+
+// AdsGram Configuration
+export const isLocalhost = typeof window !== 'undefined' && 
+  (window.location.hostname === 'localhost' || 
+   window.location.hostname === '127.0.0.1' || 
+   window.location.hostname.includes('ngrok-free.app'));
+
+// Block IDs for AdsGram
+export const AdsGram = {
+  // Production block IDs
+  DeployBlockId: {
+    taskBlockId: "13357",
+    rewardBlockId: "13345",
+    rewardBlockId2: "13355",
+    interstitialBlockId: "int-13356"
+  },
+  
+  // Localhost/Development block IDs
+  LocalhostBlockId: {
+    taskBlockId: "13362", // Replace with your localhost task block ID
+    rewardBlockId: "13359",   // Replace with your localhost reward block ID
+    rewardBlockId2: "13360",  // Replace with your localhost reward block ID 2
+    interstitialBlockId: "int-13361" // Replace with your localhost interstitial block ID
+  },
+  
+  // Get the appropriate block ID based on environment
+  getBlockId: function(type) {
+    const blockIds = this.isLocalhost() ? this.LocalhostBlockId : this.DeployBlockId;
+    return blockIds[type];
+  },
+  
+  // Check if running in localhost environment
+  isLocalhost: function() {
+    return isLocalhost;
+  }
+};
