@@ -11,7 +11,7 @@ export default function ExampleAdsgramPage() {
   // Replace with your actual blockId from AdsGram dashboard
   const blockId = "13345"; // add api get userId to add reward
   const blockIdReward2 = "13355"; // add api get userId to add reward
-  const blockInterstital = "13356"; // not have api get userId
+  const blockInterstital = "int-13356"; // not have api get userId
   const handleAdCompleted = () => {
     console.log("Ad completed successfully!");
     // Here you can add logic to reward the user
