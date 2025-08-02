@@ -61,7 +61,8 @@ export default function Home() {
     <main className={`flex min-h-screen flex-col items-center justify-between ${cssClass.homePage}`} >
         <div className="home-container"> 
           <section className="home-title">
-          <Link className="text-blue-500" href="/example-adsgram">Example Adsgram</Link>
+          <Link className="text-blue-500 mb-2 mr-2" href="/example-adsgram">Example Adsgram</Link>
+          <Link className="text-blue-500 mb-2 mr-2" href="/example-task">Example Task</Link>
           <div className="home-bg-header-mask"></div>
           <div className="home-title-content">
             <BannerComponent />

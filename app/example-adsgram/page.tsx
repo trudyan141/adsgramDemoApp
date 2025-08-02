@@ -4,6 +4,7 @@ import AdsgramButton from '@/components/common/AdsgramButton';
 import { Card, Col, Divider, Row, Typography } from 'antd';
 import { useTranslations } from 'next-intl';
 
+
 export default function ExampleAdsgramPage() {
   const t = useTranslations();
   
@@ -11,7 +12,6 @@ export default function ExampleAdsgramPage() {
   const blockId = "13345"; // add api get userId to add reward
   const blockIdReward2 = "13355"; // add api get userId to add reward
   const blockInterstital = "13356"; // not have api get userId
-  const blockIdTask = "13357"; // add api get userId to add reward
   const handleAdCompleted = () => {
     console.log("Ad completed successfully!");
     // Here you can add logic to reward the user
@@ -47,12 +47,7 @@ export default function ExampleAdsgramPage() {
             className="mb-2 mr-2"
             name="Ad 3"
           />
-            <AdsgramButton 
-            blockId={blockIdTask}
-            type="primary"
-            className="mb-2 mr-2"
-            name="Ad 4"
-          />
+          
           </Card>
         </Col>
         
@@ -60,6 +55,7 @@ export default function ExampleAdsgramPage() {
           <Card title="AdsGram Button with Custom Text">
             <p>This button has custom text and handlers:</p>
             <AdsgramButton 
+              name='Ad 1 with handleAdCompleted'
               blockId={blockId}
               type="default"
               onAdCompleted={handleAdCompleted}

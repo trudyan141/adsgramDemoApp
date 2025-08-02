@@ -1,0 +1,39 @@
+.task {
+  --adsgram-task-font-size: 16px; /* min 14px */
+  --adsgram-task-icon-size: 50px; /* min 30px */
+  --adsgram-task-icon-title-gap: 15px; /* min 5px max 40px */
+  --adsgram-task-button-width: 60px; /* min 40px */
+  --adsgram-task-icon-border-radius: 8px;
+
+  display: block;
+  width: 328px;
+  padding: 8px 16px 8px 8px;
+  border-radius: 16px;
+  background-color: #1d2733;
+  font-family: inherit;
+  color: white;
+}
+
+.reward {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+}
+
+.button {
+  margin-left: 10px;
+  background-color: #50a8eb;
+  border-radius: 5px;
+  padding: 6px 12px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button_claim {
+  margin-left: 0;
+  background-color: #ee941c;
+}
+
+.button_done {
+  margin-left: 0;
+  background-color: #007539;
+} 
